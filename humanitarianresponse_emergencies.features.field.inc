@@ -10,7 +10,7 @@
 function humanitarianresponse_emergencies_field_default_fields() {
   $fields = array();
 
-  // Exported field: 'taxonomy_term-emergencies-field_emergency_disaster_type'
+  // Exported field: 'taxonomy_term-emergencies-field_emergency_disaster_type'.
   $fields['taxonomy_term-emergencies-field_emergency_disaster_type'] = array(
     'field_config' => array(
       'active' => '1',
@@ -31,6 +31,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
           0 => 'tid',
         ),
       ),
+      'locked' => '0',
       'module' => 'taxonomy',
       'settings' => array(
         'allowed_values' => array(
@@ -39,6 +40,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'options_list_callback' => 'i18n_taxonomy_allowed_values',
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -74,7 +76,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-emergencies-field_emergency_glide_number'
+  // Exported field: 'taxonomy_term-emergencies-field_emergency_glide_number'.
   $fields['taxonomy_term-emergencies-field_emergency_glide_number'] = array(
     'field_config' => array(
       'active' => '1',
@@ -95,6 +97,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
@@ -136,7 +139,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
     ),
   );
 
-  // Exported field: 'taxonomy_term-emergencies-field_emergency_hash_tag'
+  // Exported field: 'taxonomy_term-emergencies-field_emergency_hash_tag'.
   $fields['taxonomy_term-emergencies-field_emergency_hash_tag'] = array(
     'field_config' => array(
       'active' => '1',
@@ -157,6 +160,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
           0 => 'format',
         ),
       ),
+      'locked' => '0',
       'module' => 'text',
       'settings' => array(
         'max_length' => '255',
