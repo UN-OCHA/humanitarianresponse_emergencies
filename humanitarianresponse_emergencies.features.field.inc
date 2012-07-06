@@ -304,7 +304,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'entity_type' => 'taxonomy_term',
       'field_name' => 'field_emergency_glide_number',
       'label' => 'GLIDE Number',
-      'required' => 1,
+      'required' => 0,
       'settings' => array(
         'text_processing' => '0',
         'user_register_form' => FALSE,
