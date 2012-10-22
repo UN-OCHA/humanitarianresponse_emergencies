@@ -206,7 +206,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
           'summary_rows' => 5,
         ),
         'type' => 'text_textarea_with_summary',
-        'weight' => -5,
+        'weight' => '1',
       ),
     ),
   );
@@ -254,7 +254,10 @@ function humanitarianresponse_emergencies_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'taxonomy',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'taxonomy_term_reference_link',
           'weight' => '0',
         ),
@@ -277,7 +280,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
         'module' => 'options',
         'settings' => array(),
         'type' => 'options_select',
-        'weight' => '1',
+        'weight' => '2',
       ),
     ),
   );
@@ -320,7 +323,10 @@ function humanitarianresponse_emergencies_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => '1',
         ),
@@ -346,7 +352,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '2',
+        'weight' => '3',
       ),
     ),
   );
@@ -389,7 +395,10 @@ function humanitarianresponse_emergencies_field_default_fields() {
         'default' => array(
           'label' => 'above',
           'module' => 'text',
-          'settings' => array(),
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+          ),
           'type' => 'text_default',
           'weight' => '2',
         ),
@@ -415,7 +424,97 @@ function humanitarianresponse_emergencies_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '3',
+        'weight' => '4',
+      ),
+    ),
+  );
+
+  // Exported field: 'taxonomy_term-emergencies-field_information_focal_points'.
+  $fields['taxonomy_term-emergencies-field_information_focal_points'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_information_focal_points',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'contact' => 'contact',
+          ),
+        ),
+        'handler_submit' => 'Change handler',
+        'target_type' => 'node',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'emergencies',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'entityreference',
+          'settings' => array(
+            'diff_custom' => 0,
+            'diff_custom_settings' => array(),
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => 5,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_information_focal_points',
+      'label' => 'Information Focal Points',
+      'required' => 0,
+      'settings' => array(
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'references_dialog_add' => 0,
+          'references_dialog_edit' => 0,
+          'references_dialog_search' => 0,
+          'references_dialog_search_view' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '5',
       ),
     ),
   );
@@ -482,7 +581,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
           'size' => 60,
         ),
         'type' => 'text_textfield',
-        'weight' => -6,
+        'weight' => '0',
       ),
     ),
   );
@@ -494,6 +593,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
   t('Disaster type');
   t('GLIDE Number');
   t('Hash tag');
+  t('Information Focal Points');
   t('Name');
 
   return $fields;
