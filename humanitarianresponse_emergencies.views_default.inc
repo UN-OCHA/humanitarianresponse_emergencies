@@ -108,7 +108,7 @@ function humanitarianresponse_emergencies_views_default_views() {
     'emergencies' => 'emergencies',
   );
   $handler->display->display_options['block_description'] = 'Emergencies';
-  
+
   /* Display: XLS */
   $handler = $view->new_display('views_data_export', 'XLS', 'views_data_export_1');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
@@ -124,7 +124,6 @@ function humanitarianresponse_emergencies_views_default_views() {
     'default' => 0,
     'block' => 0,
   );
-  
   $translatables['emergencies'] = array(
     t('Master'),
     t('Emergencies'),
