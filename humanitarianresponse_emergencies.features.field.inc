@@ -464,6 +464,9 @@ function humanitarianresponse_emergencies_field_default_fields() {
             ),
           ),
           'sort' => array(
+            'direction' => 'ASC',
+            'field' => 'field_asst_contact_email:email',
+            'property' => 'nid',
             'type' => 'none',
           ),
           'target_bundles' => array(
@@ -492,6 +495,12 @@ function humanitarianresponse_emergencies_field_default_fields() {
           ),
           'type' => 'entityreference_label',
           'weight' => 5,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
         ),
       ),
       'entity_type' => 'taxonomy_term',

@@ -110,7 +110,7 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['block_description'] = 'Emergencies';
 
   /* Display: XLS */
-  $handler = $view->new_display('views_data_export', 'XLS', 'views_data_export_1');
+  $handler = $view->new_display('views_data_export', 'XLS', 'xls');
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -118,7 +118,58 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['style_options']['provide_file'] = 1;
   $handler->display->display_options['style_options']['filename'] = 'emergencies.xls';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: Disaster type */
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['id'] = 'field_emergency_disaster_type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['table'] = 'field_data_field_emergency_disaster_type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['field'] = 'field_emergency_disaster_type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['label'] = 'Type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Taxonomy term: GLIDE Number */
+  $handler->display->display_options['fields']['field_emergency_glide_number']['id'] = 'field_emergency_glide_number';
+  $handler->display->display_options['fields']['field_emergency_glide_number']['table'] = 'field_data_field_emergency_glide_number';
+  $handler->display->display_options['fields']['field_emergency_glide_number']['field'] = 'field_emergency_glide_number';
   $handler->display->display_options['path'] = 'emergencies/xls';
+  $handler->display->display_options['displays'] = array(
+    'page' => 'page',
+    'default' => 0,
+    'block' => 0,
+  );
+
+  /* Display: XML */
+  $handler = $view->new_display('views_data_export', 'XML', 'xml');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_data_export_xml';
+  $handler->display->display_options['style_options']['provide_file'] = 0;
+  $handler->display->display_options['style_options']['parent_sort'] = 0;
+  $handler->display->display_options['style_options']['transform'] = 1;
+  $handler->display->display_options['style_options']['transform_type'] = 'pascal';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  /* Field: Taxonomy term: Disaster type */
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['id'] = 'field_emergency_disaster_type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['table'] = 'field_data_field_emergency_disaster_type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['field'] = 'field_emergency_disaster_type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['label'] = 'Type';
+  $handler->display->display_options['fields']['field_emergency_disaster_type']['type'] = 'taxonomy_term_reference_plain';
+  /* Field: Taxonomy term: GLIDE Number */
+  $handler->display->display_options['fields']['field_emergency_glide_number']['id'] = 'field_emergency_glide_number';
+  $handler->display->display_options['fields']['field_emergency_glide_number']['table'] = 'field_data_field_emergency_glide_number';
+  $handler->display->display_options['fields']['field_emergency_glide_number']['field'] = 'field_emergency_glide_number';
+  $handler->display->display_options['path'] = 'emergencies/xml';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -146,6 +197,7 @@ function humanitarianresponse_emergencies_views_default_views() {
     t('Page'),
     t('Block'),
     t('XLS'),
+    t('XML'),
   );
   $export['emergencies'] = $view;
 

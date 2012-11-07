@@ -20,5 +20,35 @@ function humanitarianresponse_emergencies_user_default_permissions() {
     'module' => 'vppr',
   );
 
+  // Exported permission: clear csv_emergencies feeds.
+  $permissions['clear csv_emergencies feeds'] = array(
+    'name' => 'clear csv_emergencies feeds',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'manager',
+    ),
+    'module' => 'feeds',
+  );
+
+  // Exported permission: import csv_emergencies feeds.
+  $permissions['import csv_emergencies feeds'] = array(
+    'name' => 'import csv_emergencies feeds',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'manager',
+    ),
+    'module' => 'feeds',
+  );
+
+  // Exported permission: unlock csv_emergencies feeds.
+  $permissions['unlock csv_emergencies feeds'] = array(
+    'name' => 'unlock csv_emergencies feeds',
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'manager',
+    ),
+    'module' => 'feeds',
+  );
+
   return $permissions;
 }
