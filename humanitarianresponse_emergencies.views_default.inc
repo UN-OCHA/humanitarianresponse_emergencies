@@ -135,7 +135,7 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['fields']['field_emergency_glide_number']['id'] = 'field_emergency_glide_number';
   $handler->display->display_options['fields']['field_emergency_glide_number']['table'] = 'field_data_field_emergency_glide_number';
   $handler->display->display_options['fields']['field_emergency_glide_number']['field'] = 'field_emergency_glide_number';
-  $handler->display->display_options['path'] = 'emergencies/xls';
+  $handler->display->display_options['path'] = 'emergencies.xls';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
@@ -169,7 +169,7 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['fields']['field_emergency_glide_number']['id'] = 'field_emergency_glide_number';
   $handler->display->display_options['fields']['field_emergency_glide_number']['table'] = 'field_data_field_emergency_glide_number';
   $handler->display->display_options['fields']['field_emergency_glide_number']['field'] = 'field_emergency_glide_number';
-  $handler->display->display_options['path'] = 'emergencies/xml';
+  $handler->display->display_options['path'] = 'emergencies.xml';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
