@@ -34,6 +34,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => 255,
       ),
       'translatable' => '1',
@@ -63,6 +64,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'label' => 'Name',
       'required' => TRUE,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => 0,
         'user_register_form' => FALSE,
       ),
@@ -85,6 +87,9 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'deleted' => '0',
       'entity_types' => array(),
       'field_name' => 'field_emergency_disaster_type',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
       'foreign keys' => array(
         'tid' => array(
           'columns' => array(
@@ -107,6 +112,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
             'parent' => '0',
           ),
         ),
+        'entity_translation_sync' => FALSE,
       ),
       'translatable' => '0',
       'type' => 'taxonomy_term_reference',
@@ -139,6 +145,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'label' => 'Disaster type',
       'required' => 1,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -175,6 +182,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -208,6 +216,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'label' => 'GLIDE Number',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -247,6 +256,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => '255',
       ),
       'translatable' => '0',
@@ -280,6 +290,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'label' => 'Hash tag',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => '0',
         'user_register_form' => FALSE,
       ),
@@ -322,6 +333,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'locked' => '0',
       'module' => 'entityreference',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'handler' => 'base',
         'handler_settings' => array(
           'behaviors' => array(
@@ -374,6 +386,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'label' => 'Information Focal Points',
       'required' => 0,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'user_register_form' => FALSE,
       ),
       'widget' => array(
@@ -418,6 +431,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'locked' => '0',
       'module' => 'text',
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'max_length' => 255,
       ),
       'translatable' => '1',
@@ -447,6 +461,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
       'label' => 'Name',
       'required' => TRUE,
       'settings' => array(
+        'entity_translation_sync' => FALSE,
         'text_processing' => 0,
         'user_register_form' => FALSE,
       ),

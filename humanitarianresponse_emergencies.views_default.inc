@@ -42,7 +42,7 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Field: Taxonomy term: Disaster type */
+  /* Field: Field: Disaster type */
   $handler->display->display_options['fields']['field_emergency_disaster_type']['id'] = 'field_emergency_disaster_type';
   $handler->display->display_options['fields']['field_emergency_disaster_type']['table'] = 'field_data_field_emergency_disaster_type';
   $handler->display->display_options['fields']['field_emergency_disaster_type']['field'] = 'field_emergency_disaster_type';
@@ -59,7 +59,7 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'emergencies' => 'emergencies',
   );
-  /* Filter criterion: Taxonomy term: Disaster type (field_emergency_disaster_type) */
+  /* Filter criterion: Field: Disaster type (field_emergency_disaster_type) */
   $handler->display->display_options['filters']['field_emergency_disaster_type_tid']['id'] = 'field_emergency_disaster_type_tid';
   $handler->display->display_options['filters']['field_emergency_disaster_type_tid']['table'] = 'field_data_field_emergency_disaster_type';
   $handler->display->display_options['filters']['field_emergency_disaster_type_tid']['field'] = 'field_emergency_disaster_type_tid';
@@ -125,7 +125,7 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  /* Field: Taxonomy term: Disaster type */
+  /* Field: Field: Disaster type */
   $handler->display->display_options['fields']['field_emergency_disaster_type']['id'] = 'field_emergency_disaster_type';
   $handler->display->display_options['fields']['field_emergency_disaster_type']['table'] = 'field_data_field_emergency_disaster_type';
   $handler->display->display_options['fields']['field_emergency_disaster_type']['field'] = 'field_emergency_disaster_type';
@@ -159,7 +159,7 @@ function humanitarianresponse_emergencies_views_default_views() {
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
-  /* Field: Taxonomy term: Disaster type */
+  /* Field: Field: Disaster type */
   $handler->display->display_options['fields']['field_emergency_disaster_type']['id'] = 'field_emergency_disaster_type';
   $handler->display->display_options['fields']['field_emergency_disaster_type']['table'] = 'field_data_field_emergency_disaster_type';
   $handler->display->display_options['fields']['field_emergency_disaster_type']['field'] = 'field_emergency_disaster_type';
