@@ -4,3 +4,10 @@
  */
 
 include_once('humanitarianresponse_emergencies.features.inc');
+
+/**
+ * Implements hook_cron()
+ */
+function humanitarianresponse_emergencies_cron() {
+  humanitarianresponse_core_feeds_check('csv_disaster_types', 'http://terms.humanitarianresponse.info/disaster-types.csv');
+}
