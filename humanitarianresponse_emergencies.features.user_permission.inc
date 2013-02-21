@@ -14,8 +14,8 @@ function humanitarianresponse_emergencies_user_default_permissions() {
   $permissions['administer emergencies vocabulary terms'] = array(
     'name' => 'administer emergencies vocabulary terms',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'vppr',
   );
@@ -24,8 +24,8 @@ function humanitarianresponse_emergencies_user_default_permissions() {
   $permissions['clear csv_emergencies feeds'] = array(
     'name' => 'clear csv_emergencies feeds',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'feeds',
   );
@@ -34,8 +34,8 @@ function humanitarianresponse_emergencies_user_default_permissions() {
   $permissions['import csv_emergencies feeds'] = array(
     'name' => 'import csv_emergencies feeds',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'feeds',
   );
@@ -44,8 +44,8 @@ function humanitarianresponse_emergencies_user_default_permissions() {
   $permissions['unlock csv_emergencies feeds'] = array(
     'name' => 'unlock csv_emergencies feeds',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
     ),
     'module' => 'feeds',
   );
