@@ -407,6 +407,82 @@ function humanitarianresponse_emergencies_field_default_fields() {
     ),
   );
 
+  // Exported field: 'taxonomy_term-emergencies-field_locations'.
+  $fields['taxonomy_term-emergencies-field_locations'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '-1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_locations',
+      'field_permissions' => array(
+        'type' => '0',
+      ),
+      'foreign keys' => array(
+        'tid' => array(
+          'columns' => array(
+            'tid' => 'tid',
+          ),
+          'table' => 'taxonomy_term_data',
+        ),
+      ),
+      'indexes' => array(
+        'tid' => array(
+          0 => 'tid',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'taxonomy',
+      'settings' => array(
+        'allowed_values' => array(
+          0 => array(
+            'vocabulary' => 'locations',
+            'parent' => '0',
+          ),
+        ),
+        'entity_translation_sync' => FALSE,
+      ),
+      'translatable' => '0',
+      'type' => 'taxonomy_term_reference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'emergencies',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'module' => 'taxonomy',
+          'settings' => array(),
+          'type' => 'taxonomy_term_reference_link',
+          'weight' => 6,
+        ),
+        'ical' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'entity_type' => 'taxonomy_term',
+      'field_name' => 'field_locations',
+      'label' => 'Location',
+      'required' => 1,
+      'settings' => array(
+        'entity_translation_sync' => FALSE,
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'hs_taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_hs',
+        'weight' => '32',
+      ),
+    ),
+  );
+
   // Exported field: 'taxonomy_term-emergencies-name_field'.
   $fields['taxonomy_term-emergencies-name_field'] = array(
     'field_config' => array(
@@ -483,6 +559,7 @@ function humanitarianresponse_emergencies_field_default_fields() {
   t('GLIDE Number');
   t('Hash tag');
   t('Information Focal Points');
+  t('Location');
   t('Name');
 
   return $fields;
