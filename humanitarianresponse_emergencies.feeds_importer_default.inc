@@ -35,7 +35,7 @@ function humanitarianresponse_emergencies_feeds_importer_default() {
     'processor' => array(
       'plugin_key' => 'FeedsTermProcessor',
       'config' => array(
-        'vocabulary' => 'disaster_types',
+        'bundle' => 'disaster_types',
         'mappings' => array(
           0 => array(
             'source' => 'Name:en',
