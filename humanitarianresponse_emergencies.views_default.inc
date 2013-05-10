@@ -178,16 +178,17 @@ function humanitarianresponse_emergencies_views_default_views() {
 
   /* Display: CSV */
   $handler = $view->new_display('views_data_export', 'CSV', 'views_data_export_1');
-  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_data_export_csv';
   $handler->display->display_options['style_options']['provide_file'] = 1;
-  $handler->display->display_options['style_options']['filename'] = 'Emergencies.csv';
+  $handler->display->display_options['style_options']['filename'] = 'emergencies.csv';
   $handler->display->display_options['style_options']['parent_sort'] = 0;
   $handler->display->display_options['style_options']['quote'] = 1;
   $handler->display->display_options['style_options']['trim'] = 0;
   $handler->display->display_options['style_options']['replace_newlines'] = 0;
   $handler->display->display_options['style_options']['header'] = 1;
-  $handler->display->display_options['path'] = 'emergencies';
+  $handler->display->display_options['path'] = 'emergencies.csv';
   $handler->display->display_options['displays'] = array(
     'page' => 'page',
     'default' => 0,
