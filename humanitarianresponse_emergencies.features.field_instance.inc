@@ -59,11 +59,8 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'taxonomy',
-        'settings' => array(
-          'diff_custom' => 0,
-          'diff_custom_settings' => array(),
-        ),
-        'type' => 'taxonomy_term_reference_link',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 0,
       ),
       'ical' => array(
@@ -100,10 +97,7 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'diff_custom' => 0,
-          'diff_custom_settings' => array(),
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 1,
       ),
@@ -144,10 +138,7 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
       'default' => array(
         'label' => 'above',
         'module' => 'text',
-        'settings' => array(
-          'diff_custom' => 0,
-          'diff_custom_settings' => array(),
-        ),
+        'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
       ),
@@ -189,8 +180,6 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'diff_custom' => 0,
-          'diff_custom_settings' => array(),
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -237,9 +226,9 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'taxonomy',
+        'module' => 'hs_taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'hs_taxonomy_term_reference_hierarchical_text',
         'weight' => 6,
       ),
       'ical' => array(
