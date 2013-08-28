@@ -10,7 +10,7 @@
 function humanitarianresponse_emergencies_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: administer emergencies vocabulary terms.
+  // Exported permission: 'administer emergencies vocabulary terms'.
   $permissions['administer emergencies vocabulary terms'] = array(
     'name' => 'administer emergencies vocabulary terms',
     'roles' => array(
@@ -20,7 +20,7 @@ function humanitarianresponse_emergencies_user_default_permissions() {
     'module' => 'vppr',
   );
 
-  // Exported permission: clear csv_emergencies feeds.
+  // Exported permission: 'clear csv_emergencies feeds'.
   $permissions['clear csv_emergencies feeds'] = array(
     'name' => 'clear csv_emergencies feeds',
     'roles' => array(
@@ -30,7 +30,7 @@ function humanitarianresponse_emergencies_user_default_permissions() {
     'module' => 'feeds',
   );
 
-  // Exported permission: import csv_emergencies feeds.
+  // Exported permission: 'import csv_emergencies feeds'.
   $permissions['import csv_emergencies feeds'] = array(
     'name' => 'import csv_emergencies feeds',
     'roles' => array(
@@ -40,7 +40,7 @@ function humanitarianresponse_emergencies_user_default_permissions() {
     'module' => 'feeds',
   );
 
-  // Exported permission: unlock csv_emergencies feeds.
+  // Exported permission: 'unlock csv_emergencies feeds'.
   $permissions['unlock csv_emergencies feeds'] = array(
     'name' => 'unlock csv_emergencies feeds',
     'roles' => array(

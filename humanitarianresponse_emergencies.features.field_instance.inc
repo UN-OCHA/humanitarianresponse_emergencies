@@ -171,6 +171,40 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-emergencies-field_emergency_status'
+  $field_instances['taxonomy_term-emergencies-field_emergency_status'] = array(
+    'bundle' => 'emergencies',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'field_emergency_status',
+    'label' => 'Status',
+    'required' => 0,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'apply_chosen' => 1,
+      ),
+      'type' => 'options_select',
+      'weight' => 33,
+    ),
+  );
+
   // Exported field_instance: 'taxonomy_term-emergencies-field_information_focal_points'
   $field_instances['taxonomy_term-emergencies-field_information_focal_points'] = array(
     'bundle' => 'emergencies',
@@ -296,6 +330,43 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'taxonomy_term-emergency_status-name_field'
+  $field_instances['taxonomy_term-emergency_status-name_field'] = array(
+    'bundle' => 'emergency_status',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'taxonomy_term',
+    'field_name' => 'name_field',
+    'label' => 'Name',
+    'required' => TRUE,
+    'settings' => array(
+      'entity_translation_sync' => FALSE,
+      'hide_label' => array(
+        'entity' => FALSE,
+        'page' => FALSE,
+      ),
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => -5,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Connection to Twitter and social media');
@@ -305,6 +376,7 @@ function humanitarianresponse_emergencies_field_default_field_instances() {
   t('Information Focal Points');
   t('Location');
   t('Name');
+  t('Status');
 
   return $field_instances;
 }
